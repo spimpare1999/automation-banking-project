@@ -10,9 +10,9 @@ public class LoginStep {
     private WebDriver driver;
     LoginActions loginActions;
 
-    public LoginStep(CommonSteps commonSteps) {
+    public LoginStep(CommonSteps commonSteps, LoginActions loginActions ) {
         this.driver = commonSteps.getDriver();
-        this.loginActions= loginActions;
+        this.loginActions= loginActions ;
     }
 
     @Given("Open url in application in browser")
@@ -29,6 +29,6 @@ public class LoginStep {
         loginActions.userId(userId);
         loginActions.enterPassword(password);
         loginActions.clickOnLogin();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
     }
 }
