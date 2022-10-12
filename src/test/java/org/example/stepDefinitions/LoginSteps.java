@@ -1,4 +1,4 @@
-package org.example.stepDefinition;
+package org.example.stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -6,11 +6,11 @@ import io.cucumber.java.en.When;
 import org.example.PageActions.LoginActions;
 import org.openqa.selenium.WebDriver;
 
-public class LoginStep {
+public class LoginSteps {
     private WebDriver driver;
     LoginActions loginActions;
 
-    public LoginStep(CommonSteps commonSteps, LoginActions loginActions ) {
+    public LoginSteps(CommonSteps commonSteps, LoginActions loginActions ) {
         this.driver = commonSteps.getDriver();
         this.loginActions= loginActions ;
     }

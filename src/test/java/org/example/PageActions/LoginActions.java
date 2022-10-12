@@ -1,8 +1,7 @@
 package org.example.PageActions;
 
 import org.example.PageElements.LoginElements;
-import org.example.stepDefinition.CommonSteps;
-import org.example.stepDefinition.LoginStep;
+import org.example.stepDefinitions.CommonSteps;
 import org.openqa.selenium.WebDriver;
 
 public class LoginActions {
