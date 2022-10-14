@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 
         features = {"src/test/resources/features"}
         ,glue = {"org/example/stepDefinitions"}
-        ,tags = "@SC01"
-      //  ,dryRun = true
+        ,tags = "@CS"
+      // ,dryRun = true
 
 )
 
