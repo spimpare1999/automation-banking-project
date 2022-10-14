@@ -18,7 +18,11 @@ public class LoginElements {
    @FindBy(name = "btnLogin")
     public WebElement LoginButton;
 
-   public LoginElements(WebDriver driver){
+    @FindBy(xpath = "/html/body/div[3]/div/ul/li[2]/a")
+    public WebElement ClickNewCust;
+
+
+    public LoginElements(WebDriver driver){
        this.driver=driver;
        PageFactory.initElements(driver,this);
    }

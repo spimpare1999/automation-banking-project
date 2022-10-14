@@ -1,13 +1,20 @@
 
-@Manager
-Feature: This is Login page
+@New
+Feature: This is New Customer Validation Page
 
-  @SC01
-  Scenario: Login with Invalid credentials
-   Given Open url in browser
+  Background:
+    Given Open url in browser
     When Enter "mngr446532" and "vagytEd" and click on login
-    Then   Login should be successful
 
+
+  @SC02
+  Scenario: Add new customer with Invalid credentials
+   When Enter "shruti" and click On Gender
+    And  Enter '21-12-99' and also the Address "Latur"
+    And   Enter City "Latur" and state "Maharashtra"
+    And   Enter PIN "413510" and Telephone number "9876543212"
+    And   Enter email "spim987@g.mail" and click on submit
+    Then  Submit should be successful
 
 #  @SC03
 #  Scenario: Edit customer form with valid credentials

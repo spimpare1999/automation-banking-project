@@ -25,5 +25,8 @@ public class LoginActions {
     public  void clickOnLogin(){
       loginElements.LoginButton.click();
     }
+    public  void clicknewCust (){
+        loginElements.ClickNewCust.click();
+    }
 
 }
