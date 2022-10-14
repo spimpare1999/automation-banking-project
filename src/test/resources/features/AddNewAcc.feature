@@ -1,4 +1,4 @@
-@NA
+@SE
 Feature: This is New Account Page
 
   Background:

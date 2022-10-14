@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
         features = {"src/test/resources/features"}
         ,glue = {"org/example/stepDefinitions"}
-        ,tags = "@CS"
+        ,tags = "@SA"                           // @SB,@SC,@SD,@SE,@SF,@SG,@SH,@SI,@SJ,@SK"
       // ,dryRun = true
 
 )

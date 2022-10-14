@@ -23,8 +23,8 @@ public class CommonSteps {
 
     @After
     public void teardown() throws InterruptedException {
-        Thread.sleep(5000);
-     //  driver.quit();
+        Thread.sleep(2000);
+       driver.quit();
     }
 //    @Given("Open url in application in browser")
 //    public void open_url_in_application_in_browser() {

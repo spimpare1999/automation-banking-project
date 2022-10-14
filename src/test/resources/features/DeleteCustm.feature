@@ -1,4 +1,4 @@
-@TD
+@SD
 Feature: This is Delete Customer Page
 
   Background:

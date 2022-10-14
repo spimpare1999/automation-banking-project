@@ -17,13 +17,18 @@ public class CustmStateSteps {
     }
 
     @When("Enter account no {string} And fill date From {string} To {string}")
-    public void enterAccountNoAndFillDateFromTo(String accn, String mdate, String arg2) {
+    public void enterAccountNoAndFillDateFromTo(String accn, String fdate, String date) {
         custmStateActions.link();
-
+        custmStateActions.Acc(accn);
+        custmStateActions.date(fdate);
+        custmStateActions.ldte(date);
     }
-    @And("Enter mini transaction value {string} And no of transaction And click on submit")
-    public void enterMiniTransactionValueAndNoOfTransactionAndClickOnSubmit(String arg0) {
-
+    @And("Enter mini transaction value {string} And no of transaction {string} And click on submit")
+    public void enterMiniTransactionValueAndNoOfTransactionAndClickOnSubmit(String minimun, String noof) {
+        custmStateActions.trans(minimun);
+        custmStateActions.max(noof);
+        custmStateActions.submit();
+        driver.switchTo().alert().accept();
     }
 
     @Then("Customize statement successfully")
