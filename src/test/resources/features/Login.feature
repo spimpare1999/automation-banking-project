@@ -1,5 +1,5 @@
 
-@Manager
+@SA
 Feature: This is Login page
 
   @SC01

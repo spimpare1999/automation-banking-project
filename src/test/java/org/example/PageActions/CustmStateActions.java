@@ -17,8 +17,22 @@ public class CustmStateActions {
     public void link(){
         custmStateElements.likn.click();
     }
-    public void add(String dt){
-        custmStateElements.numb.findElement(By.id(dt));
+    public void Acc(String ac){
+        custmStateElements.accn.sendKeys(ac);
     }
-
+    public void date(String dte){
+        custmStateElements.fdate.sendKeys(dte);
+    }
+    public void ldte(String le){
+        custmStateElements.ldate.sendKeys(le);
+    }
+    public void trans(String mt) {
+        custmStateElements.mtras.sendKeys(mt);
+    }
+    public void max(String no){
+        custmStateElements.mx.sendKeys(no);
+    }
+    public void submit(){
+        custmStateElements.clik.click();
+    }
 }

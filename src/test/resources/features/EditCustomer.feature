@@ -1,4 +1,4 @@
-@Test
+@SC
 Feature: This is New Customer Validation Page
 
   Background:

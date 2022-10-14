@@ -1,5 +1,5 @@
 
-@New
+@SB
 Feature: This is New Customer Validation Page
 
   Background:

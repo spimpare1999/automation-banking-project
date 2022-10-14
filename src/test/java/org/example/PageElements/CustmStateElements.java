@@ -13,7 +13,23 @@ public class CustmStateElements {
     public WebElement likn;
 
     @FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[6]/td[2]/input")
-    public WebDriver numb;
+    public WebElement accn;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[7]/td[2]/input")
+    public WebElement fdate;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input")
+    public WebElement ldate;
+
+    @FindBy(xpath = "//input[@name='amountlowerlimit']")
+    public WebElement mtras;
+
+    @FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[10]/td[2]/input")
+    public WebElement mx;
+
+    @FindBy(xpath = "//input[@name='AccSubmit']")
+    public WebElement clik;
+
 
     public CustmStateElements(WebDriver driver) {
         this.driver = driver;
